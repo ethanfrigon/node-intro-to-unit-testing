@@ -22,8 +22,11 @@ describe('fizzBuzzer', function(){
   });
 
   it('should return buzz for numbers divisible by 5', function(){
-    const answer = fizzBuzzer(1055);
-    expect(answer).to.equal('buzz');
+    // const answer = fizzBuzzer(1055);
+    // expect(answer).to.equal('buzz');
+    expect(function(){
+      fizzBuzzer(1055);
+    }).to.equal('buzz');
   });
   
   it('should return an error if the input is not a number', function(){
